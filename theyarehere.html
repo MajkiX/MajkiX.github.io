@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{background-color: black;
-            display: flex;
-            justify-content: center;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <title>???</title>
 </head>
 <body>
-    <p style="color: red;">Z04</p>
+    <p class="lvl">04</p>
     <img src="/img/angel.jpg" alt="" width="750px" height="500px">
-    <audio id="myaudio" autoplay loop>
+    <audio class="myaudio" autoplay loop controls>
         <source src="/audio/music.wav">
     </audio>
     <p style="color: white;">12:7. And there was a great battle in heaven: Michael and his angels fought with the dragon, and the dragon fought, and his angels. <br>
@@ -27,7 +21,7 @@
     <script>
         function toggleMute() 
         {
-            var audio = document.getElementById("myaudio");
+            var audio = document.getElementsByClassName("myaudio");
             if (audio.muted) 
             {
                 audio.muted = false;

@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{background-color: black;
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <title>source of evil</title>
 </head>
 <body>
-    <p style="color: red;">Z05</p>
+    <p class="lvl">05</p>
     <img src="/img/theyareeverywhere.jpg" alt="" width="1600px" height="900px">
-    <audio id="myaudio" autoplay loop>
+    <audio class="myaudio" autoplay loop controls>
         <source src="/audio/steps.wav">
     </audio>
     <p style="color: red;">look deeper</p>
     <script>
         function toggleMute() 
         {
-            var audio = document.getElementById("myaudio");
+            var audio = document.getElementsByClassName("myaudio");
             if (audio.muted) 
             {
                 audio.muted = false;

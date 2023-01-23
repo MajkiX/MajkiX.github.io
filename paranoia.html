@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{background-color: black;
-            display: flex;
-            justify-content: center;
-        }
-    </style >
+    <link rel="stylesheet" href="css/main.css">
+    <title>Prey</title>
 </head>
 <body>
-    <p style="color: red;">Z08</p>
-    <img src="/img/entrence.png" alt="" width="1600px" height="900px">
-    <iframe src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLiGxgYaP-z935UqEsP5yjk1hf-9KPQBgL&loop=1&autoplay=1" allow="autoplay" style="display: none;"></iframe>
+    <p class="lvl">08</p>
+    <img src="/img/coss.jpg" alt="" width="600px" height="900px">
+    <audio class="myaudio" autoplay loop controls>
+        <source src="/audio/music.wav">
+    </audio>
+    <script>
+        function toggleMute() 
+        {
+            var audio = document.getElementsByClassName("myaudio");
+            if (audio.muted) 
+            {
+                audio.muted = false;
+            } 
+            else 
+            {
+                debugger;
+                audio.muted = true;
+                audio.play()
+            }
+        }
+        $(document).ready(function () 
+        {
+            setTimeout(toggleMute, 3000);
+        }
+        )
+    </script>
 </body>
 </html>

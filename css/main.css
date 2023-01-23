@@ -1,0 +1,22 @@
+body{background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    height: 900px;
+    width: 1820px;
+}
+
+.myaudio{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 15px;
+}
+
+.lvl{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: red;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Symbol</title>
+</head>
+<body>
+    <p class="lvl">10</p>
+    <img src="/img/bible.jpg" alt="" width="1000px" height="600px">
+    <audio class="myaudio" autoplay loop controls>
+        <source src="/audio/music.wav">
+    </audio>
+    <!-- 2 3 5 4 9 8 1 6 10 7 -->
+    <script>
+        function toggleMute() 
+        {
+            var audio = document.getElementsByClassName("myaudio");
+            if (audio.muted) 
+            {
+                audio.muted = false;
+            } 
+            else 
+            {
+                debugger;
+                audio.muted = true;
+                audio.play()
+            }
+        }
+        $(document).ready(function () 
+        {
+            setTimeout(toggleMute, 3000);
+        }
+        )
+    </script>
+</body>
+</html>
