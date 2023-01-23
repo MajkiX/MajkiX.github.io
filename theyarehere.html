@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <p style="color: red;">Z04</p>
+    <img src="/img/angel.jpg" alt="" width="750px" height="500px">
+    <audio id="myaudio" autoplay loop>
+        <source src="/audio/music.wav">
+    </audio>
+    <p style="color: white;">12:7. And there was a great battle in heaven: Michael and his angels fought with the dragon, and the dragon fought, and his angels. <br>
+
+        12:8. And they prevailed not: neither was their place found any more in heaven. <br>
+        
+        12:9. And that great dragon was cast out, that old serpent, who is called the devil and Satan, who seduceth the whole world. And he was cast unto the earth: and his angels were thrown down with him.</p>
+    <script>
+        function toggleMute() 
+        {
+            var audio = document.getElementById("myaudio");
+            if (audio.muted) 
+            {
+                audio.muted = false;
+            } 
+            else 
+            {
+                debugger;
+                audio.muted = true;
+                audio.play()
+            }
+        }
+        $(document).ready(function () 
+        {
+            setTimeout(toggleMute, 3000);
+        }
+        )
+    </script>
+</body>
+</html>
